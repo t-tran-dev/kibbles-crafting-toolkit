@@ -25,11 +25,11 @@ export const Header = ({ open, updateOpen, title, ...rest }: AppBarProps) => {
           aria-label="toggle drawer"
           onClick={handleDrawerClick}
           edge="start"
-          sx={{ mr: 2 }}
+          sx={{ mr: 2, color: "common.white" }}
         >
           <Icon icon={open ? "mdi:hamburger-open" : "mdi:hamburger-menu"} />
         </IconButton>
-        <Typography variant="h6" noWrap component="div" color="textPrimary">
+        <Typography variant="h6" noWrap component="div" color="common.white">
           {title}
         </Typography>
       </Toolbar>
@@ -40,6 +40,6 @@ export const Header = ({ open, updateOpen, title, ...rest }: AppBarProps) => {
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
 })<AppBarProps>(({ theme }) => ({
+  backgroundColor: theme.palette.primary.main,
   zIndex: theme.zIndex.drawer + 1,
-  backgroundColor: theme.palette.background.paper,
 }));
