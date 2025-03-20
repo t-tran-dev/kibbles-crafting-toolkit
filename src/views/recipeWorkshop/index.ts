@@ -1,1 +1,1 @@
-export * from "./RecipeWorkshop";
+export * from "./lib/RecipeWorkshop";

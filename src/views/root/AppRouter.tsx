@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { AppRoutes } from "./AppRoutes";
-import { Error } from "../error/Error";
+import { Error } from "../error";
+import { Dashboard } from "../dashboard";
 import { RecipeWorkshop } from "../recipeWorkshop";
-import { Dashboard } from "../../components/dashboard";
+import { AppRoutes } from "./AppRoutes";
 import { ContentLayout } from "./ContentLayout";
 
 const router = createBrowserRouter([
